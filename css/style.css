@@ -268,7 +268,10 @@ textarea {
 }
 
 .home-hero__socials {
-  position: absolute;
+  z-index: 1;
+  color: #eee;
+  position: sticky;
+  width: fit-content;
   top: 50%;
   border: 2px solid #eee;
   border-left: 2px solid #eee;
