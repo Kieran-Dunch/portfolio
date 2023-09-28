@@ -600,6 +600,12 @@ textarea {
   background-size: cover;
 }
 
+#whats-for-dinner-bg {
+  background: linear-gradient(to right, rgba(25, 130, 196, 0.5), rgba(25, 130, 196, 0.3)), url('../assets/jpeg/herbs.jpg');
+  background-size: cover;
+
+}
+
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero {
     height: unset;
