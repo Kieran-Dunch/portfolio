@@ -36,3 +36,22 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+// scroll
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const slideElements = document.querySelectorAll(".hidden");
+const fadeElements = document.querySelectorAll(".fade");
+artistFadeElements.forEach((el) => observer.observe(el));
+slideElements.forEach((el) => observer.observe(el));
+fadeElements.forEach((el) => observer.observe(el));
