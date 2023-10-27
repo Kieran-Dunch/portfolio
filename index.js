@@ -52,6 +52,5 @@ const observer = new IntersectionObserver((entries) => {
 
 const slideElements = document.querySelectorAll(".hidden");
 const fadeElements = document.querySelectorAll(".fade");
-artistFadeElements.forEach((el) => observer.observe(el));
 slideElements.forEach((el) => observer.observe(el));
 fadeElements.forEach((el) => observer.observe(el));
